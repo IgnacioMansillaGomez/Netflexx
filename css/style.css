@@ -148,7 +148,7 @@ header nav a.active {
   height: 50%;
   top: calc(50% - 25%);
   line-height: 40px;
-  width: 50px;
+  width: 40px;
   color: #fff;
   cursor: pointer;
   z-index: 500;
@@ -181,8 +181,13 @@ header nav a.active {
   flex-wrap: nowrap;
 }
 
+.peliculas-recomendadas .contenedor-carousel .carousel .peliculas.hover {
+  transition: scale(1, 2);
+  transform-origin: center;
+}
+
 .peliculas-recomendadas .contenedor-carousel .carousel .peliculas {
-  width: 20%;
+  min-width: 20%;
   transition: 0.3s ease all;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
@@ -209,5 +214,18 @@ header nav a.active {
   }
   .contenedor nav a {
     margin-bottom: 7px;
+  }
+  .peliculas-recomendadas .contenedor-carousel {
+    overflow: visible;
+  }
+  .peliculas-recomendadas .contenedor-carousel .carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .peliculas-recomendadas .indicadores,
+  .peliculas-recomendadas .flecha-izquierda,
+  .peliculas-recomendadas .flecha-derecha {
+    display: none;
   }
 }
