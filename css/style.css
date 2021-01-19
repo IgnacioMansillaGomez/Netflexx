@@ -47,7 +47,7 @@ header nav a {
   margin-right: 20px;
 }
 header nav a:hover,
-header nav a.active {
+header nav a.activo {
   color: #fff;
 }
 
@@ -98,6 +98,7 @@ header nav a.active {
 .movie-principal .boton:hover {
   color: #000;
   background: #fff;
+  border: none;
 }
 .movie-principal .boton i {
   margin-right: 0.5em;
@@ -124,7 +125,7 @@ header nav a.active {
 }
 
 .contenedor-titulo-controles .indicadores button:hover,
-.contenedor-titulo-controles .indicadores button:active {
+.contenedor-titulo-controles .indicadores button.activo {
   background: red;
 }
 /* ----------------------------contenedor principal y flechas----------------------------- */
@@ -181,7 +182,7 @@ header nav a.active {
   flex-wrap: nowrap;
 }
 
-.peliculas-recomendadas .contenedor-carousel .carousel .peliculas.hover {
+.peliculas-recomendadas .contenedor-carousel .carousel .peliculas .hover {
   transition: scale(1, 2);
   transform-origin: center;
 }
