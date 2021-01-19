@@ -178,8 +178,19 @@ header nav a.active {
 
 .peliculas-recomendadas .contenedor-carousel .carousel {
   display: flex;
+  flex-wrap: nowrap;
 }
 
+.peliculas-recomendadas .contenedor-carousel .carousel .peliculas {
+  width: 20%;
+  transition: 0.3s ease all;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.peliculas-recomendadas .contenedor-carousel .carousel .peliculas img {
+  width: 100%;
+  vertical-align: top;
+}
 /* ----------------------------USO DE MEDIA QUERIES--------------------------------------- */
 
 @media screen and (max-width: 800px) {
