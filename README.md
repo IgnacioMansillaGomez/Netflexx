@@ -2,6 +2,6 @@
 
 ### Netflixx
 
-[Visualizar el proyecto](https://ignaciomansillagomez.github.io/Netflixx/)
+[Visualizar el proyecto](https://ignaciomansillagomez.github.io/Netflexx/)
 
 Por: Ignacio Mansilla Gomez
