@@ -182,8 +182,8 @@ header nav a.activo {
   flex-wrap: nowrap;
 }
 
-.peliculas-recomendadas .contenedor-carousel .carousel .peliculas .hover {
-  transition: scale(1, 2);
+.peliculas-recomendadas .contenedor-carousel .carousel .peliculas.hover {
+  transform: scale(1.2);
   transform-origin: center;
 }
 

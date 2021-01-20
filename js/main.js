@@ -48,12 +48,18 @@ for (let i = 0; i < cantPeliculas; i++) {
 
 // EFECTO HOVER SOBRE LAS IMAGENES DEL CAROUSEL //
 
-movies.forEach((peliculas) => {
-  peliculas.addEventListener("mouseenter", (e) => {
-    let elem = e.currentTarget;
+movies.forEach((p) => {
+  p.addEventListener("mouseenter", (e) => {
+    const elem = e.currentTarget;
     setTimeout(() => {
-      movies.forEach((peliculas) => peliculas.classList.remove("hover"));
+      movies.forEach((p) => p.classList.remove("hover"));
       elem.classList.add("hover");
     }, 300);
   });
+});
+
+// Mouse Leave //
+
+row.addEventListener("mouseleave", () => {
+  movies.forEach((p) => p.classList.remove("hover"));
 });
