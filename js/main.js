@@ -53,6 +53,8 @@ movies.forEach((p) => {
     const elem = e.currentTarget;
     setTimeout(() => {
       movies.forEach((p) => p.classList.remove("hover"));
+    }, 0);
+    setTimeout(() => {
       elem.classList.add("hover");
     }, 300);
   });
@@ -62,4 +64,14 @@ movies.forEach((p) => {
 
 row.addEventListener("mouseleave", () => {
   movies.forEach((p) => p.classList.remove("hover"));
+});
+
+// INDICADORES BORDER NONE //
+eftArrow.addEventListener("click", () => {
+  row.scrollLeft -= row.offsetWidth;
+  const indicadorAct = document.querySelector(".indicadores .activo");
+  if (indicadorAct.previousElementSibling) {
+    indicadorAct.previousElementSibling.classList.add("activo");
+    indicadorAct.classList.remove("activo");
+  }
 });
